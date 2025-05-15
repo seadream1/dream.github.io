@@ -1,0 +1,121 @@
+/* 最外层容器样式 */
+.titian {
+    width: 100%;            /* 宽度100% */
+    max-width: 1200px;
+    min-width: 320px; /* 改为更小的最小宽度以适应手机 */
+    overflow: hidden;       /* 溢出隐藏，用于清除浮动 */
+    margin: 0 auto;         /* 水平居中 */
+}
+
+.container{
+    text-align: center;
+
+}
+
+.back-button {
+    position: absolute;     /* 绝对定位 */
+    left: 10px;             /* 距离容器左边缘10px */
+    top: 10px;              /* 距离容器顶部10px */
+    padding: 8px 15px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px; /* 更大的圆角 */ 
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 添加阴影效果 */
+    z-index: 10;
+}
+
+.back-button:hover {
+    background-color: white; /* 鼠标悬停效果 */
+}
+
+
+.red-container {
+    border-radius: 20px; /* 更大的圆角 */
+    position: relative;
+    width: 100%;
+    min-height: auto; /* 改为自动高度 */
+    background-color: #f0f0f0;  /* 白色背景 */
+    margin: 20px auto;         /* 水平居中 */
+    padding: 50px 20px 20px; /* 顶部留出按钮空间 */
+    color: black;           /* 白色文字 */
+    box-sizing: border-box; /* 盒模型计算方式 */
+}
+
+/* 新增的视频容器样式 */
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+/* 新增的视频说明样式 */
+.video-caption {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 0 0 8px 8px; /* 只圆角下方 */
+    text-align: center;
+}
+
+.video-caption p {
+    margin: 8px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.video-caption .english-caption {
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 14px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse; /* 反转排列顺序 */
+    gap: 20px;
+}
+
+
+ .english-caption {
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 12px;
+    color:black;
+}
+
+.image {
+    display: flex; /* 使用 flex 布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: center; /* 水平居中对齐 */
+    gap: 10px; /* 图片之间的间距 */
+    margin: 20px auto; /* 垂直和水平居中 */
+}
+
+.image img {
+    max-width: 100%; /* 图片的最大宽度不超过容器宽度 */
+    height: auto; /* 自动调整高度以保持宽高比例 */
+    object-fit: cover; /* 确保图片覆盖整个区域 */
+    border-radius: 10px; /* 添加圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    width: 80%; /* 设置每张图片的固定宽度 */
+    height: 400px; /* 设置每张图片的固定高度 */
+}
+
+
+
+

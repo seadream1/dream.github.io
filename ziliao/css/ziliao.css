@@ -1,0 +1,83 @@
+/* 全局样式 */
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;  
+    background-color: white;  
+    line-height: 1.6; 
+} 
+
+/* 最外层容器样式 */
+.ziliao {
+    width: 1200px; 
+    min-width: 320px;
+    margin: 0 auto; 
+    overflow: hidden;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* 更大的圆角 */  
+}
+
+/* 头部容器样式 */
+.header-container {
+    text-align: center;  
+    background-color: white; 
+}
+
+/* logo图片样式 */
+.header-logo {
+    height: 54px;  
+    width: auto; 
+}
+
+/* 主要内容区域样式 */
+.main-content {
+    position: relative; 
+    width: 100%;  
+    background-color: #f0f0f0 ;
+    color: black;
+    margin: 0 auto;  
+    padding: 60px 20px 30px;  
+    box-sizing: border-box; 
+    border-radius: 20px; /* 更大的圆角 */
+}
+
+/* 返回按钮样式 */
+.back-button {
+    position: absolute;  /* 绝对定位 */
+    left: 20px;  
+    padding: 10px 15px; 
+    background-color:#f0f0f0;  
+    color: red;  
+    border: none; 
+    border-radius: 20px;  /* 圆角 */
+    cursor: pointer;  /* 鼠标指针样式 */
+    font-weight: bold;  /* 文字加粗 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);  /* 阴影效果 */
+    z-index: 10;  
+}
+
+/* 返回按钮悬停效果 */
+.back-button:hover {
+    background-color: #f0f0f0; /* 鼠标悬停效果 */ 
+}
+
+/* 电影条目容器 */
+.movie-item {
+    margin-bottom: 30px;  
+    padding-bottom: 15px;  
+    border-bottom: 1px dashed #ccc;  
+}
+
+/* 中文文本区域样式 */
+.chinese-text {
+    padding: 0 10px;  
+    margin-bottom: 5px;  
+}
+
+/* 英文文本特殊样式 */
+.english-text {
+    font-style: italic;  
+    opacity: 0.9; 
+    padding: 0 10px;  
+    margin-bottom: 15px;  
+    font-size: 15px; 
+    color: #666;  
+}
